@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="ChromeTest(failed)">
+    <parameter name="browser12" value="Chrome"/>
+    <classes>
+      <class name="testngpack1.vericycreateacc">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="goBackToMainPage"/>
+          <include name="verifyPrivacyNoticelink"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- testngpack1.vericycreateacc -->
+      <class name="testngpack1.crossbrowser">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="createPOMObject"/>
+          <include name="verifySearchbutton"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- testngpack1.crossbrowser -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="2" parallel="classes" name="FirefoxTest(failed)">
+    <parameter name="browser12" value="Firefox"/>
+    <classes>
+      <class name="testngpack1.vericycreateacc">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="goBackToMainPage"/>
+          <include name="verifyPrivacyNoticelink"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- testngpack1.vericycreateacc -->
+      <class name="testngpack1.crossbrowser">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="verifySigninbutton"/>
+          <include name="afterClass"/>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="createPOMObject"/>
+          <include name="verifySearchbutton"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- testngpack1.crossbrowser -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
