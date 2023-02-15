@@ -21,7 +21,7 @@ public class search {
 	    private WebElement signinbutton;
 	    
 	    
-	  private Actions act;
+	  //private Actions act;
 	    	   
 	    public search(WebDriver driver)
 	    {
