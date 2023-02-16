@@ -19,9 +19,9 @@ public class Browser1 {
 			return driver;
 		    }
 		
-		//public static WebDriver openEdgeBrowser() {
-		//	System.setProperty("webdriver.edge.driver","D:\\SOFTWARE TESTING\\autiomation selenium\\edgedriver_win64\\msedgedriver.exe");
-		//	WebDriver  driver = new EdgeDriver();
-		//	return driver;
-		 //   }
+		 public static WebDriver openEdgeBrowser() {
+			System.setProperty("webdriver.edge.driver","D:\\SOFTWARE TESTING\\autiomation selenium\\edgedriver_win64\\msedgedriver.exe");
+			WebDriver  driver = new EdgeDriver();
+			return driver;
+		    }
 }
