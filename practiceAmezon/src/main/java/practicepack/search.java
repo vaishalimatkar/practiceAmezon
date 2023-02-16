@@ -21,19 +21,19 @@ public class search {
 	    private WebElement signinbutton;
 	    
 	    
-	  //private Actions act;
+	   private Actions act;
 	    	   
 	    public search(WebDriver driver)
 	    {
 	    	PageFactory.initElements(driver,this);
-	    //	act=new Actions(driver);
+	    	act=new Actions(driver);
 	    }
 	    
 	    public void sendsearchName(String user) {
 	    	searchbox.sendKeys(user);
-	    	searchbox.sendKeys("vsm");
+	    		
 	    }	
-	            
+      
 	   	  
 	    public void clinkonsearchbutton() {
 	    	searchbutton.click();
